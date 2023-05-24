@@ -1,4 +1,10 @@
-//"bodyタグ内のHTMLを、<h1>Hello JQuery!!</h1>で書き換えなさい"という意味
+//"box1タグ内のcssを、 'background-color': '#0000FF','height': '100px'で書き換えなさい"という意味
 $(function (){
-  $('body').html('<h1>Hello jQuery!!</h1>');
+  $('.box1').slideDown(function (){
+   $('.box1').css({
+     'background-color': '#0000FF',
+     'height': '200px',
+     'width': '100px'
+   }).slideUp();
+  });
 });
